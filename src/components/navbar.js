@@ -4,11 +4,11 @@ import "./base.scss"
 
 export default function Navbar() {
   return (
-    <nav className="navbar is-fixed-top is-primary">
+    <nav className="navbar is-fixed-top">
       <div className="container">
         <div className="navbar-brand">
             <Link to="/" className="navbar-item">
-                Joel
+            &lt;Joel/&gt;
             </Link>
         </div>
         <div className="navbar-menu">

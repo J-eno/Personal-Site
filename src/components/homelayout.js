@@ -9,23 +9,23 @@ import Hero from "./hero"
 
 export default function HomeLayout({ children }) {
   return (
-    <div>
+    <div className="homepage">
       <Hero />
-      <section className="section">
+      <section className="section about has-background-light" id="about">
         <div className="container has-text-centered	">
           <p className="title">About</p>
-          <div className="columns is-justify-content-space-between is-vcentered">
+          <div className="columns is-justify-content-center is-vcentered">
             <div className="column is-3">
               <figure className="image is-square">
                 <img
                   src={myFace}
-                  alt="A picture of Joel"
+                  alt="Joel"
                   style={{ objectFit: "cover" }}
                   className="is-rounded"
                 />
               </figure>
             </div>
-            <div className="column is-7 has-text-left">
+            <div className="column is-5 has-text-left-tablet">
               I'm a {get_my_age()} year old developer out of Maryland working
               most recently as a Frontend Developer.
               <br />
@@ -33,13 +33,13 @@ export default function HomeLayout({ children }) {
               Development, and Learning new things.
             </div>
           </div>
-          <button className="button is-primary is-large">
+          <button className="button is-danger is-large is-outlined">
             Read More &rarr;
           </button>
         </div>
       </section>
 
-      <section className="section">
+      <section className="section projects">
         <div className="container">
           <p className="title has-text-centered	">Projects</p>
         </div>
