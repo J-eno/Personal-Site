@@ -4,6 +4,7 @@ import { FaGithub } from "react-icons/fa"
 
 import myFace from "../images/my-face.jpg"
 
+import "fontsource-exo-2"
 import "./base.scss"
 import Hero from "./hero"
 
@@ -11,7 +12,7 @@ export default function HomeLayout({ children }) {
   return (
     <div className="homepage">
       <Hero />
-      <section className="section about has-background-light" id="about">
+      <section className="section about" id="about">
         <div className="container has-text-centered	">
           <p className="title">About</p>
           <div className="columns is-justify-content-center is-vcentered">

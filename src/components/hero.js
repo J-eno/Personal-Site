@@ -10,8 +10,8 @@ export default function Hero() {
       <Navbar />
       <div className="hero-body">
         <div className="container">
-          <h1 className="title">Hi, I'm Joel. <br/> I love to Code. Wow. Coding is fun</h1>
-          <p className="subtitle">If Statements, For Loops, wow. Love it.</p>
+          <h1 className="title is-1">Hi, I'm Joel. <br/> I love to Code. Wow. Coding is fun</h1>
+          <p className="subtitle is-2">If Statements, For Loops, wow. Love it.</p>
         </div>
       </div>
     </section>
