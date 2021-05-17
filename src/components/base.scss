@@ -9,5 +9,11 @@ $family-primary: "Exo 2";
 $family-secondary: "Exo 2";
 $title-family: "Exo 2";
 
+.red {
+    color: $danger;
+}
+
 @import "~bulma/bulma.sass";
 @import "./scss/hero";
+@import "./scss/nav";
+@import "./scss/about";

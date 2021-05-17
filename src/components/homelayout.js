@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useRef} from "react"
 import { Link } from "gatsby"
 import { FaGithub } from "react-icons/fa"
 
@@ -9,12 +9,13 @@ import "./base.scss"
 import Hero from "./hero"
 
 export default function HomeLayout({ children }) {
+  const disclaimerRef = useRef();
   return (
     <div className="homepage">
       <Hero />
       <section className="section about" id="about">
         <div className="container has-text-centered	">
-          <p className="title">About</p>
+          <p className="title">About Me</p>
           <div className="columns is-justify-content-center is-vcentered">
             <div className="column is-3">
               <figure className="image is-square">
@@ -26,17 +27,15 @@ export default function HomeLayout({ children }) {
                 />
               </figure>
             </div>
-            <div className="column is-5 has-text-left-tablet">
+            <div className="column is-5 has-text-left-tablet is-size-4">
               I'm a {get_my_age()} year old developer out of Maryland working
               most recently as a Frontend Developer.
               <br />
-              My career interests include Game Development, Frontend
+              My career interests include Game Development, Web
               Development, and Learning new things.
             </div>
           </div>
-          <button className="button is-danger is-large is-outlined">
-            Read More &rarr;
-          </button>
+          <Link className="button is-danger is-large is-outlined" to="/about/">More Details &rarr;</Link>
         </div>
       </section>
 
@@ -54,11 +53,10 @@ export default function HomeLayout({ children }) {
           </span>
         </div>
       </section>
-      <div class="notification is-warning" style={{position: "fixed", bottom: 0, right: 0}}>
+      <div ref={disclaimerRef} class="notification is-warning" style={{position: "fixed", bottom: 0, right: 0}}>
         <button class="delete disclaimer" onClick={() => {
-          const delButton = document.querySelector(".delete.disclaimer");
-          console.log(delButton);
-          delButton.parentNode.parentNode.removeChild(delButton.parentNode);
+          console.log(disclaimerRef.current);
+          disclaimerRef.current.parentNode.removeChild(disclaimerRef.current);
         }}></button>
         This site is still a <strong>Under Construction</strong>, and thus will be missing features, pages, content, and styling.
       </div>

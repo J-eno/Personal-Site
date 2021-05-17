@@ -1,0 +1,23 @@
+.about-us-img {
+    position: relative;
+
+    .num-1 {
+
+    }
+    .num-2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        height: 100%;
+        transition: all .5s;
+        &.off {
+            opacity: 0;
+        }
+    }
+    &:hover {
+        .num-2 {
+            opacity: 1;
+        }
+    }
+}

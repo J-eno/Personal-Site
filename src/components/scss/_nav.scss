@@ -1,0 +1,12 @@
+.navbar {
+    font-size: 32px;
+    .navbar-brand {
+        font-weight: 600;
+    }
+}
+
+section.nav {
+    + section {
+        margin-top: 10rem;
+    }
+}

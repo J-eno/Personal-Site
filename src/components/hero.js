@@ -10,7 +10,7 @@ export default function Hero() {
       <Navbar />
       <div className="hero-body">
         <div className="container">
-          <h1 className="title is-1">Hi, I'm Joel. <br/> I love to Code. Wow. Coding is fun</h1>
+          <h1 className="title is-1">Hi, I'm <span className="red">Joel.</span> <br/> I love to Code. Wow. Coding is fun</h1>
           <p className="subtitle is-2">If Statements, For Loops, wow. Love it.</p>
         </div>
       </div>
